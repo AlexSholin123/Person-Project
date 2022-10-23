@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: a1
+    password: 1111
+    url: jdbc:postgresql://localhost:5433/people_db
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    database: postgresql
+  sql:
+    init:
+      mode: always
+      platform: postgres
+      continue-on-error: false
